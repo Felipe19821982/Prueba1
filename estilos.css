@@ -1,6 +1,8 @@
 .rec{
-   background-color: brown;
-   padding: 20px;
-   display: flex;
+    width: auto;
+    height: auto;
+    background-color: brown;
+    padding: 20px;
+    display: flex;
 
 }
