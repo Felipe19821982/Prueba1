@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fichas</title>
+    <!--Insercion de los CDN-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -39,10 +40,11 @@
                     <span class="sr-only">Next</span>
                     </button>
                 </div>
-
+                <!--Tarjeta de boostrap con su informacion-->
                 <div class="card-body">
                 <h5 class="card-title">2018 Tesla Model</h5>
                 <p class="card-text">Tras un exhaustivo análisis, José Fuenzalida ha determinado que el vehículo presenta un problema con el sistema de frenos, específicamente con las pastillas de freno desgastadas. Se recomienda su reemplazo inmediato para garantizar la seguridad del conductor y los pasajeros.</p>
+                <!--Datos del automovil-->
                 <div class="datos">
                     <div class="linea">
                         <b>Model</b>
@@ -67,7 +69,7 @@
                     <br>
 
                 </div>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
         </div>
@@ -100,10 +102,11 @@
                     <span class="sr-only">Next</span>
                     </button>
                 </div>
-
+                <!--Tarjeta de boostrap con su informacion-->
                 <div class="card-body">
                 <h5 class="card-title">1971 Porsche 914</h5>
                 <p class="card-text">Tras un exhaustivo análisis, José Fuenzalida ha determinado que el vehículo presenta un problema con el sistema de frenos, específicamente con las pastillas de freno desgastadas. Se recomienda su reemplazo inmediato para garantizar la seguridad del conductor y los pasajeros.</p>
+                <!--Datos del automovil-->
                 <div class="datos">
                     <div class="linea">
                         <b>Model</b>
@@ -128,7 +131,7 @@
                     <br>
 
                 </div>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
         </div>
@@ -160,10 +163,11 @@
                             <span class="sr-only">Next</span>
                             </button>
                         </div>
-        
+                        <!--Tarjeta de boostrap con su informacion-->
                         <div class="card-body">
                         <h5 class="card-title">2011 Ferrari 458 Italia</h5>
                         <p class="card-text">Tras un exhaustivo análisis, José Fuenzalida ha determinado que el vehículo presenta un problema con el sistema de frenos, específicamente con las pastillas de freno desgastadas. Se recomienda su reemplazo inmediato para garantizar la seguridad del conductor y los pasajeros.</p>
+                        <!--Datos del automovil-->
                         <div class="datos">
                             <div class="linea">
                                 <b>Model</b>
@@ -186,9 +190,18 @@
                             </div>
                             <div class="rect"></div>
                             <br>
-        
+                            <!--Boton de boostrap-->
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <form id="compra">
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </form>
+                            <!--mensaje emergente de javascript-->
+                            <script> 
+                                document.getElementById('compra').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+                                    alert('Usuario o contraseña incorrectos');
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
