@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller mecanico rayomcqueen</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        /* Eliminar estilos de lista predeterminados */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Estilo para colocar la imagen a la izquierda */
+        li {
+            display: flex; /* Utilizar flexbox para alinear elementos */
+            align-items: center; /* Alinear verticalmente */
+            margin-bottom: 10px; /* Espaciado entre elementos */
+        }
+        li img {
+            margin-right: 10px; /* Espaciado entre imagen y texto */
+            width: 250px; /* Ancho de la imagen (ajusta según necesites) */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilos para centrar todo el contenido */
+        body {                                   
+            text-align: center; /* Centrar todo el contenido */
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+            background-color: black /* Cambiar color de fondo a gris claro */
+        }
+
+        /* Estilos para centrar la lista de integrantes */
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para centrar la lista de secciones de ayuda */
+        .secciones-ayuda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para cambiar tamaño del carrusel */
+        .carousel-item img {
+            width: 100%; /* La imagen ocupará todo el ancho del carrusel */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+
+        /* Estilos para el título y descripción del carrusel */
+
+
+        .carousel {
+        width: 60%; /* Ancho del carrusel */
+        margin: auto; /* Centrar horizontalmente */
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo.jpg" width="150" height="150" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Ingresar <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="fichas.html">Llena tu ficha <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="carrodecompras.html">Carro de compras <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="imagenes/categorias.jpg" width="25" height="25" alt="Categorías">
+                        Categorías
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mecánicos</a>
+                        <a class="dropdown-item" href="categoriaautos.html">Autos</a>
+                        <a class="dropdown-item" href="categoriacam.html">Camionetas o suv</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+                 
+            </ul>
+        </div>
+    </nav>
+    </nav>
+    <h1 style="color:white;">AUTOMOTORA REYES</h1>
+    <p style="color:white">Los mejores en la especialidad ventas 100% seguras</p>
+    <p style="color:white">nuestros automoviles disponibles  ⭣ ⭣ ⭣</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="trabajo.camion.html">
+                    <img class="d-block w-100" src="Imagenes/auto1.jpg" alt="First slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="trabajo2.html">
+                    <img class="d-block w-100" src="imagenes/camioneta1.jpg" alt="Second slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="trabajo3.html">
+                    <img class="d-block w-100" src="imagenes/auto3.jpg" alt="Third slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="trabajo1.html">
+                    <img class="d-block w-100" src="imagenes/auto2.jpg" alt="Second slide">
+                </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+        
+         <script>
+            // Selecciona el carrusel
+            var myCarousel = document.querySelector('#carouselExampleIndicators');
+            // Crea un nuevo objeto de carrusel de Bootstrap
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 4000 // Cambia las diapositivas cada 4 segundos
+            });
+         </script>
+       
+                </button>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        </div>
+        </div>
+
+    
+        <div class="integrantes" style="color: white;">
+            <h1 style="color:white;">Nuestros integrantes</h1>
+            <ul>
+                <li>Pablo Baez</li>
+                <li>Felipe Madrid</li>
+                <li>Sergio Bravo</li>
+        </ul>
+        </div>
+            
+        
