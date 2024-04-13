@@ -118,6 +118,7 @@
 }
 
 .ordenar{
+    justify-content: center;
     display: flex;
     padding: 20px;
 }
