@@ -69,7 +69,15 @@
                     <br>
 
                 </div>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                    <form id="compra">
+                        <a href="#" class="btn btn-primary" onclick="mostrarVentanaEmergente()">Comprar</a>
+                    </form>
+                    <!--mensaje emergente de javascript-->
+                    <script> 
+                        function mostrarVentanaEmergente() {
+                            alert('Su reserva para la compra a sido efectuada exitosamente');
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -131,7 +139,15 @@
                     <br>
 
                 </div>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                    <form id="compra">
+                        <a href="#" class="btn btn-primary" onclick="mostrarVentanaEmergente()">Comprar</a>
+                    </form>
+                    <!--mensaje emergente de javascript-->
+                    <script> 
+                        function mostrarVentanaEmergente() {
+                            alert('Su reserva para la compra a sido efectuada exitosamente');
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -191,18 +207,17 @@
                             <div class="rect"></div>
                             <br>
                             <!--Boton de boostrap-->
-                        </div>
-                            <form id="compra">
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                            </form>
+                            </div>
+                                <form id="compra">
+                                    <a href="#" class="btn btn-primary" onclick="mostrarVentanaEmergente()">Comprar</a>
+                                </form>
                             <!--mensaje emergente de javascript-->
-                            <script> 
-                                document.getElementById('compra').addEventListener('submit', function(event) {
-                                    event.preventDefault();
-                                    alert('Usuario o contraseña incorrectos');
-                                });
-                            </script>
-                        </div>
+                                <script> 
+                                    function mostrarVentanaEmergente() {
+                                        alert('Su reserva para la compra a sido efectuada exitosamente');
+                                    }
+                                </script>
+                            </div>
                     </div>
                 </div>
 
